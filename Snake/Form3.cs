@@ -46,7 +46,11 @@ namespace Snake
                 scoreboardForm.Show();
             }
             else
-            Application.Exit();
+            {
+                Leaderboard.Temp = 0;
+                Leaderboard.Player = null;
+                Application.Exit();
+            }
         }
 
         private void KeyIsDown(object sender, KeyEventArgs e)
@@ -270,10 +274,19 @@ namespace Snake
                         X = rand.Next(1, maxWidth),
                         Y = rand.Next(1, maxHeight)
                     };
+                    while(obst.X == maxWidth/2 && obst.Y == maxHeight/2)
+                    {
+                        obst = new Object
+                        {
+                            X = rand.Next(1, maxWidth),
+                            Y = rand.Next(1, maxHeight)
+                        };
+                    }
 
                     Obstacle.Add(obst);
                 }
             }
+
 
 
             food = GenerateFood();
@@ -305,7 +318,7 @@ namespace Snake
             {
                 while (food.X == Obstacle[k].X && food.Y == Obstacle[k].Y)
                 {
-                    food = new Object { X = rand.Next(2, maxWidth), Y = rand.Next(2, maxWidth) };
+                    food = new Object { X = rand.Next(1, maxWidth), Y = rand.Next(1, maxWidth) };
                 }
             }
             return food;
@@ -315,8 +328,17 @@ namespace Snake
         {
             GameTimer.Stop();
             Settings2.Directions = null;
-            this.DialogResult = DialogResult.Cancel;
-            this.Close();
+            Leaderboard.Temp = score;
+            if (score > 0)
+            {
+                GameOver gameover = new GameOver();
+                gameover.Show();
+            }
+            else
+            {
+                this.DialogResult = DialogResult.Cancel;
+                this.Close();
+            }
 
         }
 

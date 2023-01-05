@@ -31,11 +31,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.LeaderboardFirst = new System.Windows.Forms.Label();
+            this.LeaderboardSecond = new System.Windows.Forms.Label();
+            this.LeaderboardThird = new System.Windows.Forms.Label();
+            this.LeaderboardFourth = new System.Windows.Forms.Label();
+            this.LeaderboardFifth = new System.Windows.Forms.Label();
             this.PlayAgain = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -71,55 +71,55 @@
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // label2
+            // LeaderboardFirst
             // 
-            this.label2.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label2.Location = new System.Drawing.Point(160, 218);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(760, 40);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "1. Nickname";
+            this.LeaderboardFirst.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LeaderboardFirst.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.LeaderboardFirst.Location = new System.Drawing.Point(160, 218);
+            this.LeaderboardFirst.Name = "LeaderboardFirst";
+            this.LeaderboardFirst.Size = new System.Drawing.Size(760, 40);
+            this.LeaderboardFirst.TabIndex = 3;
+            this.LeaderboardFirst.Text = "1. Nickname";
             // 
-            // label3
+            // LeaderboardSecond
             // 
-            this.label3.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label3.Location = new System.Drawing.Point(160, 258);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(760, 40);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "2. Nickname";
+            this.LeaderboardSecond.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LeaderboardSecond.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.LeaderboardSecond.Location = new System.Drawing.Point(160, 258);
+            this.LeaderboardSecond.Name = "LeaderboardSecond";
+            this.LeaderboardSecond.Size = new System.Drawing.Size(760, 40);
+            this.LeaderboardSecond.TabIndex = 4;
+            this.LeaderboardSecond.Text = "2. Nickname";
             // 
-            // label4
+            // LeaderboardThird
             // 
-            this.label4.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label4.Location = new System.Drawing.Point(160, 298);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(760, 40);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "3. Nickname";
+            this.LeaderboardThird.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LeaderboardThird.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.LeaderboardThird.Location = new System.Drawing.Point(160, 298);
+            this.LeaderboardThird.Name = "LeaderboardThird";
+            this.LeaderboardThird.Size = new System.Drawing.Size(760, 40);
+            this.LeaderboardThird.TabIndex = 5;
+            this.LeaderboardThird.Text = "3. Nickname";
             // 
-            // label5
+            // LeaderboardFourth
             // 
-            this.label5.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label5.Location = new System.Drawing.Point(160, 338);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(760, 40);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "4. Nickname";
+            this.LeaderboardFourth.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LeaderboardFourth.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.LeaderboardFourth.Location = new System.Drawing.Point(160, 338);
+            this.LeaderboardFourth.Name = "LeaderboardFourth";
+            this.LeaderboardFourth.Size = new System.Drawing.Size(760, 40);
+            this.LeaderboardFourth.TabIndex = 6;
+            this.LeaderboardFourth.Text = "4. Nickname";
             // 
-            // label6
+            // LeaderboardFifth
             // 
-            this.label6.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label6.Location = new System.Drawing.Point(160, 378);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(760, 40);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "5. Nickname";
+            this.LeaderboardFifth.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LeaderboardFifth.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.LeaderboardFifth.Location = new System.Drawing.Point(160, 378);
+            this.LeaderboardFifth.Name = "LeaderboardFifth";
+            this.LeaderboardFifth.Size = new System.Drawing.Size(760, 40);
+            this.LeaderboardFifth.TabIndex = 7;
+            this.LeaderboardFifth.Text = "5. Nickname";
             // 
             // PlayAgain
             // 
@@ -154,11 +154,11 @@
             this.ClientSize = new System.Drawing.Size(1064, 771);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.PlayAgain);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.LeaderboardFifth);
+            this.Controls.Add(this.LeaderboardFourth);
+            this.Controls.Add(this.LeaderboardThird);
+            this.Controls.Add(this.LeaderboardSecond);
+            this.Controls.Add(this.LeaderboardFirst);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -167,23 +167,23 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tabela wyników";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Scoreboard_FormClosed);
-            this.Load += new System.EventHandler(this.Scoreboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
+
         #endregion
 
         private PictureBox pictureBox1;
         private Label label1;
         private PictureBox pictureBox2;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
+        private Label LeaderboardFirst;
+        private Label LeaderboardSecond;
+        private Label LeaderboardThird;
+        private Label LeaderboardFourth;
+        private Label LeaderboardFifth;
         private Button PlayAgain;
         private Button Exit;
     }

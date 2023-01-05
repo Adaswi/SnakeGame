@@ -79,10 +79,12 @@
 
         }
 
+
         #endregion
 
         private PictureBox picCanvas;
         private Label ScoreText;
         private System.Windows.Forms.Timer GameTimer;
     }
+
 }
