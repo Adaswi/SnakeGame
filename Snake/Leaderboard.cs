@@ -78,7 +78,7 @@ namespace Snake
                 if (Player != null && Temp != 0)
                     x = $"{Player}={Temp}\n";
                 else
-                    x = "#";
+                    x = "#\n";
 
                 byte[] info = new UTF8Encoding(true).GetBytes(
                     x);
