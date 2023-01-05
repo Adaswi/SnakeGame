@@ -46,7 +46,11 @@ namespace Snake
                 scoreboardForm.Show();
             }
             else
-            Application.Exit();
+            {
+                Leaderboard.Temp = 0;
+                Leaderboard.Player = null;
+                Application.Exit();
+            }
         }
 
         private void KeyIsDown(object sender, KeyEventArgs e)
@@ -315,8 +319,17 @@ namespace Snake
         {
             GameTimer.Stop();
             Settings2.Directions = null;
-            this.DialogResult = DialogResult.Cancel;
-            this.Close();
+            Leaderboard.Temp = score;
+            if (score > 0)
+            {
+                GameOver gameover = new GameOver();
+                gameover.Show();
+            }
+            else
+            {
+                this.DialogResult = DialogResult.Cancel;
+                this.Close();
+            }
 
         }
 

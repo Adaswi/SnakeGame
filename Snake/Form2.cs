@@ -35,7 +35,7 @@ namespace Snake
             if (this.DialogResult == DialogResult.Cancel)
             {
                 Settings2.SaveSettings();
-                FormProvider.mainmenuForm.Show();
+                MainMenu.ActiveForm.Show();
             }
             else
                 Application.Exit();

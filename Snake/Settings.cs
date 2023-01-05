@@ -38,7 +38,7 @@ namespace Snake
                     continue;
 
                 var keyValue = line.Split('=');
-                if (keyValue.Length == 1)
+                if (keyValue.Length != 2)
                     continue;
                 switch (keyValue[0])
                 {
