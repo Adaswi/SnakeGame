@@ -274,10 +274,19 @@ namespace Snake
                         X = rand.Next(1, maxWidth),
                         Y = rand.Next(1, maxHeight)
                     };
+                    while(obst.X == maxWidth/2 && obst.Y == maxHeight/2)
+                    {
+                        obst = new Object
+                        {
+                            X = rand.Next(1, maxWidth),
+                            Y = rand.Next(1, maxHeight)
+                        };
+                    }
 
                     Obstacle.Add(obst);
                 }
             }
+
 
 
             food = GenerateFood();
@@ -309,7 +318,7 @@ namespace Snake
             {
                 while (food.X == Obstacle[k].X && food.Y == Obstacle[k].Y)
                 {
-                    food = new Object { X = rand.Next(2, maxWidth), Y = rand.Next(2, maxWidth) };
+                    food = new Object { X = rand.Next(1, maxWidth), Y = rand.Next(1, maxWidth) };
                 }
             }
             return food;
