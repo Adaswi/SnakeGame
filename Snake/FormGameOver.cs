@@ -44,10 +44,7 @@ namespace Snake
 
         private void GameOver_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (this.DialogResult == DialogResult.Cancel)
-            {
-            }
-            else
+            if (this.DialogResult != DialogResult.Cancel)
             {
                 Leaderboard.Temp = 0;
                 Leaderboard.Player = null;
