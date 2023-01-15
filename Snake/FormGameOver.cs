@@ -25,6 +25,16 @@ namespace Snake
             Leaderboard.SaveScore();
             this.DialogResult = DialogResult.Cancel;
             this.Close();
+            if (Gameplay.ActiveForm != null)
+            {
+                Gameplay.ActiveForm.DialogResult = DialogResult.Cancel;
+                Gameplay.ActiveForm.Close();
+            }
+            else
+            {
+                GameOver gameover = new GameOver();
+                gameover.Show();
+            }
         }
 
         private void GameOverInput_TextChanged(object sender, EventArgs e)
@@ -36,8 +46,6 @@ namespace Snake
         {
             if (this.DialogResult == DialogResult.Cancel)
             {
-                FormProvider._gameplayForm.DialogResult = DialogResult.Cancel;
-                FormProvider._gameplayForm.Close();
             }
             else
             {

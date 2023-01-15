@@ -12,7 +12,8 @@ namespace Snake
 
         private void StartButton_Click(object sender, EventArgs e)
         {
-            FormProvider.gameplayForm.Show();
+            Gameplay gameplayForm = new Gameplay();
+            gameplayForm.Show();
             this.Hide();
         }
 

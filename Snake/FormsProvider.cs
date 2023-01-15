@@ -20,18 +20,5 @@ namespace Snake
             }
         }
         private static MainMenu _mainmenuForm;
-
-        public static Gameplay gameplayForm
-        {
-            get
-            {
-                if (_gameplayForm == null)
-                {
-                    _gameplayForm = new Gameplay();
-                }
-                return _gameplayForm;
-            }
-        }
-        public static Gameplay _gameplayForm;
     }
 }
