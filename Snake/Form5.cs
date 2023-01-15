@@ -41,7 +41,11 @@ namespace Snake
 
             }
             else
+            {
+                Leaderboard.Temp = 0;
+                Leaderboard.Player = null;
                 Application.Exit();
+            }
         }
     }
 }
