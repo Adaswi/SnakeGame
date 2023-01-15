@@ -43,7 +43,7 @@
             this.StartButton.TabIndex = 0;
             this.StartButton.Text = "START";
             this.StartButton.UseVisualStyleBackColor = false;
-            this.StartButton.Click += new System.EventHandler(this.button1_Click);
+            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
             // SettingsButton
             // 
@@ -56,7 +56,7 @@
             this.SettingsButton.TabIndex = 1;
             this.SettingsButton.Text = "OPCJE";
             this.SettingsButton.UseVisualStyleBackColor = false;
-            this.SettingsButton.Click += new System.EventHandler(this.button2_Click);
+            this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
             // 
             // MainMenu
             // 

@@ -3,7 +3,7 @@
   <Class Name="Snake.MainMenu">
     <Position X="10" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAAAACAAIACAAAAAACAAGAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAQCAAAAAAAACAAIACAAAAAADAAAAAAAAAAAA=</HashCode>
       <FileName>Form1.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -14,22 +14,64 @@
   <Class Name="Snake.Settings">
     <Position X="5.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IIAgAAQIACAiAAABAQCBAAACAgAAAABAAkBEAAAAAQA=</HashCode>
+      <HashCode>IIAgAAAKACAgAAAhAQSAAAECAEAAAAAAAgAAREAAAQA=</HashCode>
       <FileName>Form2.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Snake.Gameplay">
     <Position X="7.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAABQAACAAABAAAACAAAQCAAAAAAABAAAAAABAAAA=</HashCode>
+      <HashCode>CgAQgJAAACABAFAAAAGIAAACAAAYAABAAAiAEBAAkAI=</HashCode>
       <FileName>Form3.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Snake.Scoreboard">
     <Position X="12.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAYAAAAAGAAAABAAAA=</HashCode>
+      <HashCode>CAAAAABABCAAABAAABCAAAACAAAQAAAAIGAAACBQAAA=</HashCode>
       <FileName>Form4.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snake.FormProvider">
+    <Position X="14.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snake.Leaderboard">
+    <Position X="14.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAIAAABAAAAAAAAAAAAQAAAAAAAAAAAgQAAAIA=</HashCode>
+      <FileName>Leaderboard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snake.NotSnake">
+    <Position X="10" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NotSnake.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snake.Object">
+    <Position X="10" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Object.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snake.Program">
+    <Position X="12.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snake.Settings2">
+    <Position X="16.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgABIAAAhAAAAACgSAAAAEAAiwAAAAAABAQAAAAEAAA=</HashCode>
+      <FileName>Settings.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

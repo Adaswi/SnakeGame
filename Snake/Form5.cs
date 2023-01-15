@@ -36,7 +36,12 @@ namespace Snake
 
         private void GameOver_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            if (this.DialogResult == DialogResult.Cancel)
+            {
+
+            }
+            else
+                Application.Exit();
         }
     }
 }
