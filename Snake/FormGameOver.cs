@@ -25,8 +25,8 @@ namespace Snake
             Leaderboard.SaveScore();
             this.DialogResult = DialogResult.Cancel;
             this.Close();
-            Gameplay.ActiveForm.DialogResult = DialogResult.Cancel;
-            Gameplay.ActiveForm.Close();
+            FormProvider._gameplayForm.DialogResult = DialogResult.Cancel;
+            FormProvider._gameplayForm.Close();
         }
 
         private void GameOverInput_TextChanged(object sender, EventArgs e)
