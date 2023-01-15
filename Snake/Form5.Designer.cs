@@ -82,6 +82,7 @@
             this.Name = "GameOver";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game Over";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GameOver_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

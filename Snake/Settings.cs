@@ -47,26 +47,26 @@ namespace Snake
                             styl = keyValue[1];
                             if (styl == "Styl 1")
                             {
-                                HeadColor = new SolidBrush(Color.FromArgb(192, 255, 192));
-                                BodyColor = new SolidBrush(Color.FromArgb(192, 255, 192));
-                                FoodColor = new SolidBrush(Color.FromArgb(255, 128, 128));
-                                ObstacleColor = new SolidBrush(Color.FromArgb(128, 128, 128));
+                                HeadColor = new SolidBrush(Color.FromArgb(113, 255, 113));
+                                BodyColor = new SolidBrush(Color.FromArgb(113, 255, 113));
+                                FoodColor = new SolidBrush(Color.FromArgb(255, 78, 78));
+                                ObstacleColor = new SolidBrush(Color.FromArgb(65, 105, 225));
                                 BackgroundColor = Color.FromArgb(128, 128, 255);
                             }
                             else if (styl == "Styl 2")
                             {
-                                HeadColor = new SolidBrush(Color.FromArgb(153, 153, 0));
-                                BodyColor = new SolidBrush(Color.FromArgb(110, 77, 34));
-                                FoodColor = new SolidBrush(Color.FromArgb(153, 255, 51));
-                                ObstacleColor = new SolidBrush(Color.FromArgb(160, 160, 160));
-                                BackgroundColor = Color.FromArgb(255,255,153);
+                                HeadColor = new SolidBrush(Color.FromArgb(188, 201, 102));
+                                BodyColor = new SolidBrush(Color.FromArgb(149, 119, 81));
+                                FoodColor = new SolidBrush(Color.FromArgb(135, 164, 106));
+                                ObstacleColor = new SolidBrush(Color.FromArgb(184, 184, 184));
+                                BackgroundColor = Color.FromArgb(254, 254, 184);
                             }
                             else
                             {
-                                HeadColor = new SolidBrush(Color.FromArgb(192, 255, 192));
-                                BodyColor = new SolidBrush(Color.FromArgb(192, 255, 192));
-                                FoodColor = new SolidBrush(Color.FromArgb(255, 128, 128));
-                                ObstacleColor = new SolidBrush(Color.FromArgb(128, 128, 128));
+                                HeadColor = new SolidBrush(Color.FromArgb(113, 255, 113));
+                                BodyColor = new SolidBrush(Color.FromArgb(113, 255, 113));
+                                FoodColor = new SolidBrush(Color.FromArgb(255, 78, 78));
+                                ObstacleColor = new SolidBrush(Color.FromArgb(65, 105, 225));
                                 BackgroundColor = Color.FromArgb(128, 128, 255);
                             }
                         }

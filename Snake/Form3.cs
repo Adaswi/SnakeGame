@@ -16,7 +16,7 @@ namespace Snake
 
         private List<Object> Snake = new List<Object>();
         private Object food = new Object();
-        private List<Object> Obstacle = new List<Object>();
+        private List<NotSnake> Obstacle = new List<NotSnake>();
 
         int maxWidth;
         int maxHeight;
@@ -269,19 +269,12 @@ namespace Snake
             {
                 for (int i = 0; i < 200/Settings2.Width; i++)
                 {
-                    Object obst = new Object
+                    NotSnake obst = new NotSnake
                     {
                         X = rand.Next(1, maxWidth),
                         Y = rand.Next(1, maxHeight)
                     };
-                    while(obst.X == maxWidth/2 && obst.Y == maxHeight/2)
-                    {
-                        obst = new Object
-                        {
-                            X = rand.Next(1, maxWidth),
-                            Y = rand.Next(1, maxHeight)
-                        };
-                    }
+                   obst.ObstPrevent(maxWidth, maxHeight, rand);
 
                     Obstacle.Add(obst);
                 }

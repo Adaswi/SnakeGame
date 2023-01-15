@@ -33,5 +33,10 @@ namespace Snake
         {
             input = GameOverInput.Text.ToString();
         }
+
+        private void GameOver_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
