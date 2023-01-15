@@ -17,10 +17,10 @@ namespace Snake
 
         public static void LoadingScores()
         {
-                if (!File.Exists("SnakeGameLeaderboard.cfg"))
+                if (!File.Exists("SnakeGameLeaderboard.txt"))
                     CreateLeaderboardFile();
 
-                string[] lines = File.ReadAllLines("SnakeGameLeaderboard.cfg");
+                string[] lines = File.ReadAllLines("SnakeGameLeaderboard.txt");
 
                 int index = 1;
                 int empty=0;
@@ -70,7 +70,7 @@ namespace Snake
 
         public static void CreateLeaderboardFile()
         {
-            string fullPath = Path.GetFullPath(@"SnakeGameLeaderboard.cfg");
+            string fullPath = Path.GetFullPath(@"SnakeGameLeaderboard.txt");
 
             using (FileStream fs = File.Create(fullPath))
             {
@@ -91,7 +91,7 @@ namespace Snake
         {
             if (Player != null && Temp != 0)
             {
-                File.AppendAllText("SnakeGameLeaderboard.cfg",
+                File.AppendAllText("SnakeGameLeaderboard.txt",
                    $"{Player}={Temp}\n");
             }
         }

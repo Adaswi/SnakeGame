@@ -4,7 +4,7 @@
     <Position X="10" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQCAAAAAAAACAAIACAAAAAADAAAAAAAAAAAA=</HashCode>
-      <FileName>Form1.cs</FileName>
+      <FileName>FormMainMenu.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="System.Windows.Forms.Form" Collapsed="true">
@@ -15,28 +15,28 @@
     <Position X="5.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IIAgAAAKACAgAAAhAQSAAAECAEAAAAAAAgAAREAAAQA=</HashCode>
-      <FileName>Form2.cs</FileName>
+      <FileName>FormSettings.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Snake.Gameplay">
     <Position X="7.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CgAQgJAAACABAFAAAAGIAAACAAAYAABAAAiAEBAAkAI=</HashCode>
-      <FileName>Form3.cs</FileName>
+      <FileName>FormGameplay.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Snake.Scoreboard">
     <Position X="12.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CAAAAABABCAAABAAABCAAAACAAAQAAAAIGAAACBQAAA=</HashCode>
-      <FileName>Form4.cs</FileName>
+      <FileName>FormScoreboard.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Snake.FormProvider">
     <Position X="14.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAA=</HashCode>
-      <FileName>FormProvider.cs</FileName>
+      <FileName>FormsProvider.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Snake.Leaderboard">
@@ -71,7 +71,7 @@
     <Position X="16.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AgABIAAAhAAAAACgSAAAAEAAiwAAAAAABAQAAAAEAAA=</HashCode>
-      <FileName>Settings.cs</FileName>
+      <FileName>Settings2.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
