@@ -11,7 +11,7 @@
         int maxHeight;
         int score;
         Random rand = new Random();
-        bool goLeft, goRight, goDown, goUp;
+        private Keys direction;
 
 
         public Gameplay()
@@ -46,61 +46,32 @@
         {
             if (e.KeyCode == Keys.Left && Settings2.Directions != "right")
             {
-                goLeft = true;
+                this.direction=e.KeyCode;
             }
             if (e.KeyCode == Keys.Right && Settings2.Directions != "left")
             {
-                goRight = true;
+                this.direction = e.KeyCode;
             }
             if (e.KeyCode == Keys.Up && Settings2.Directions != "down")
             {
-                goUp = true;
+                this.direction = e.KeyCode;
             }
             if (e.KeyCode == Keys.Down && Settings2.Directions != "up")
             {
-                goDown = true;
+                this.direction = e.KeyCode;
             }
         }
 
         private void KeyIsUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Left)
-            {
-                goLeft = false;
-            }
-            if (e.KeyCode == Keys.Right)
-            {
-                goRight = false;
-            }
-            if (e.KeyCode == Keys.Up)
-            {
-                goUp = false;
-            }
-            if (e.KeyCode == Keys.Down)
-            {
-                goDown = false;
-            }
+
         }
 
         private void GameTimerEvent(object sender, EventArgs e)
         {
 
-            if (goLeft)
-            {
-                Settings2.Directions = "left";
-            }
-            if (goRight)
-            {
-                Settings2.Directions = "right";
-            }
-            if (goDown)
-            {
-                Settings2.Directions = "down";
-            }
-            if (goUp)
-            {
-                Settings2.Directions = "up";
-            }
+            Keys keys = this.direction;
+            Settings2.Directions = this.direction.ToString().ToLower();
 
             for (int i = Snake.Count - 1; i >= 0; i--)
             {
