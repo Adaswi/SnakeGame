@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Text;
 
 namespace Snake
 {
@@ -17,14 +11,14 @@ namespace Snake
 
         public static void LoadingScores()
         {
-                if (!File.Exists("SnakeGameLeaderboard.txt"))
-                    CreateLeaderboardFile();
+            if (!File.Exists("SnakeGameLeaderboard.txt"))
+                CreateLeaderboardFile();
 
-                string[] lines = File.ReadAllLines("SnakeGameLeaderboard.txt");
+            string[] lines = File.ReadAllLines("SnakeGameLeaderboard.txt");
 
-                int index = 1;
-                int empty=0;
-                
+            int index = 1;
+            int empty = 0;
+
             foreach (var line in lines)
             {
                 if (string.IsNullOrWhiteSpace(line) || line.StartsWith("#"))
@@ -39,34 +33,34 @@ namespace Snake
                     continue;
                 }
             }
-            PlayerName = new string[lines.Length-empty+1];
-            PlayerScore = new int[lines.Length-empty+1];
+            PlayerName = new string[lines.Length - empty + 1];
+            PlayerScore = new int[lines.Length - empty + 1];
             foreach (var line in lines)
-                {
+            {
                 if (string.IsNullOrWhiteSpace(line) || line.StartsWith("#"))
                 {
                     continue;
                 }
 
-                    var keyValue = line.Split('=');
-                    if (keyValue.Length != 2)
+                var keyValue = line.Split('=');
+                if (keyValue.Length != 2)
                     continue;
 
                 PlayerName[index] = keyValue[0];
-                    PlayerScore[index] = int.Parse(keyValue[1]);
-                    index++;
-                }
+                PlayerScore[index] = int.Parse(keyValue[1]);
+                index++;
+            }
 
-             Array.Sort(PlayerScore, PlayerName);
+            Array.Sort(PlayerScore, PlayerName);
             Array.Reverse(PlayerScore);
             Array.Reverse(PlayerName);
-            
+
 
 
         }
 
 
- 
+
 
         public static void CreateLeaderboardFile()
         {

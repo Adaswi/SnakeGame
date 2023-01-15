@@ -1,15 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Snake
+﻿namespace Snake
 {
     public partial class Gameplay : Form
     {
@@ -100,7 +89,7 @@ namespace Snake
             {
                 Settings2.Directions = "left";
             }
-            if (goRight) 
+            if (goRight)
             {
                 Settings2.Directions = "right";
             }
@@ -108,18 +97,18 @@ namespace Snake
             {
                 Settings2.Directions = "down";
             }
-            if (goUp) 
+            if (goUp)
             {
                 Settings2.Directions = "up";
             }
 
-            for (int i = Snake.Count - 1; i >=0; i--)
+            for (int i = Snake.Count - 1; i >= 0; i--)
             {
                 if (i == 0)
                 {
                     switch (Settings2.Directions)
                     {
-                        case"left":
+                        case "left":
                             Snake[i].X--;
                             break;
                         case "right":
@@ -177,7 +166,7 @@ namespace Snake
                             GameOver();
                         }
                     }
-                        if (Snake[i].X == food.X && Snake[i].Y == food.Y)
+                    if (Snake[i].X == food.X && Snake[i].Y == food.Y)
                     {
                         EatFood();
                     }
@@ -201,11 +190,11 @@ namespace Snake
                         }
                     }
                 }
-            else
-            {
-                Snake[i].X = Snake[i - 1].X;
-                Snake[i].Y = Snake[i - 1].Y;
-            }
+                else
+                {
+                    Snake[i].X = Snake[i - 1].X;
+                    Snake[i].Y = Snake[i - 1].Y;
+                }
             }
 
             picCanvas.Invalidate();
@@ -219,8 +208,8 @@ namespace Snake
 
             for (int i = 0; i < Snake.Count; i++)
             {
-                if( i%2 == 0)
-                    snakeColor= Settings2.HeadColor;
+                if (i % 2 == 0)
+                    snakeColor = Settings2.HeadColor;
                 else
                     snakeColor = Settings2.BodyColor;
 
@@ -232,12 +221,12 @@ namespace Snake
                     ));
             }
 
-                canvas.FillRectangle(Settings2.FoodColor, new Rectangle
-                   (
-                    food.X * Settings2.Width,
-                    food.Y * Settings2.Height,
-                    Settings2.Width, Settings2.Height
-                    ));
+            canvas.FillRectangle(Settings2.FoodColor, new Rectangle
+               (
+                food.X * Settings2.Width,
+                food.Y * Settings2.Height,
+                Settings2.Width, Settings2.Height
+                ));
 
             for (int j = 0; j < Obstacle.Count; j++)
             {
@@ -262,19 +251,19 @@ namespace Snake
             score = 0;
             ScoreText.Text = "PUNKTY: " + score;
 
-            Object head = new Object { X = maxWidth/2, Y = maxHeight/2 };
+            Object head = new Object { X = maxWidth / 2, Y = maxHeight / 2 };
             Snake.Add(head);
 
-            if(Settings2.Obstacles)
+            if (Settings2.Obstacles)
             {
-                for (int i = 0; i < 200/Settings2.Width; i++)
+                for (int i = 0; i < 200 / Settings2.Width; i++)
                 {
                     NotSnake obst = new NotSnake
                     {
                         X = rand.Next(1, maxWidth),
                         Y = rand.Next(1, maxHeight)
                     };
-                   obst.ObstPrevent(maxWidth, maxHeight, rand);
+                    obst.ObstPrevent(maxWidth, maxHeight, rand);
 
                     Obstacle.Add(obst);
                 }
@@ -305,8 +294,8 @@ namespace Snake
 
         private Object GenerateFood()
         {
-            
-            food = new Object { X = rand.Next(2, maxWidth), Y =rand.Next(2, maxWidth) };
+
+            food = new Object { X = rand.Next(2, maxWidth), Y = rand.Next(2, maxWidth) };
             for (int k = 0; k < Obstacle.Count; k++)
             {
                 while (food.X == Obstacle[k].X && food.Y == Obstacle[k].Y)

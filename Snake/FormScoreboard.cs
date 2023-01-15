@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Snake
+﻿namespace Snake
 {
     public partial class Scoreboard : Form
     {
@@ -19,7 +9,7 @@ namespace Snake
             Leaderboard.LoadingScores();
             for (int i = 0; i < 5; i++)
             {
-                switch(i)
+                switch (i)
                 {
                     case 0:
                         if (Leaderboard.PlayerScore.Length > 1)
@@ -85,7 +75,7 @@ namespace Snake
                 FormProvider.mainmenuForm.Show();
             }
             else
-                Application.Exit();   
+                Application.Exit();
         }
 
     }
