@@ -78,7 +78,7 @@
             this.ChangeMapSizeSelect.ForeColor = System.Drawing.Color.RoyalBlue;
             this.ChangeMapSizeSelect.FormattingEnabled = true;
             this.ChangeMapSizeSelect.Items.AddRange(new object[] {
-            "20x20",
+            "5x5",
             "50x50",
             "100x100"});
             this.ChangeMapSizeSelect.Location = new System.Drawing.Point(270, 108);
