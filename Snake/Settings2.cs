@@ -68,10 +68,10 @@ namespace Snake
                     case "RozmiarMapy":
                         {
                             rozmiary = keyValue[1];
-                            if (rozmiary == "20x20")
+                            if (rozmiary == "5x5")
                             {
-                                Width = 35;
-                                Height = 35;
+                                Width = 140;
+                                Height = 140;
                             }
                             else if (rozmiary == "50x50")
                             {
@@ -140,7 +140,7 @@ namespace Snake
             {
                 byte[] info = new UTF8Encoding(true).GetBytes(
                     "Wyglad=Styl 1\n" +
-                    "RozmiarMapy=20x20\n" +
+                    "RozmiarMapy=5x5\n" +
                     "Przeszkody=false\n" +
                     "PredkoscWeza=1\n" +
                     "TypGry=Glob\n");
