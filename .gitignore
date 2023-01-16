@@ -364,3 +364,5 @@ FodyWeavers.xsd
 
 # User excluded files
 *.cfg
+*.aip
+*.aiproj
